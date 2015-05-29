@@ -1,5 +1,8 @@
+// React stuff
+var React = require('react');
+
 //Routing stuff
-var Router = window.ReactRouter;
+var Router = require('react-router');
 var Route = Router.Route;
 var NotFoundRoute = Router.NotFoundRoute;
 var DefaultRoute = Router.DefaultRoute;
@@ -34,11 +37,3 @@ var routes = (
 Router.run(routes, function (Handler) {
   React.render(<Handler/>, document.getElementById('content'));
 });
-
-
-// React.render(
-    // <div className="bg-dark-1">
-      // <ProtoPane></ProtoPane>
-    // </div>,
-  // document.getElementById('content')
-// );

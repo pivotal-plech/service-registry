@@ -53,22 +53,6 @@ server.route({
 
 server.route({
     method: 'GET',
-    path: '/react-router.js',
-    handler: function (request, reply) {
-        reply.file('build/react-router.js');
-    }
-});
-
-server.route({
-    method: 'GET',
-    path: '/pivotal-ui-react.js',
-    handler: function (request, reply) {
-        reply.file('build/pivotal-ui-react.js');
-    }
-});
-
-server.route({
-    method: 'GET',
     path: '/application.js',
     handler: function (request, reply) {
         reply.file('build/application.js');
@@ -77,9 +61,9 @@ server.route({
 
 server.route({
     method: 'GET',
-    path: '/pivotal-ui.css',
+    path: '/components.css',
     handler: function (request, reply) {
-        reply.file('build/pivotal-ui.css');
+        reply.file('buildDrF/components.css');
     }
 });
 

@@ -11,6 +11,7 @@ var reload = browserSync.reload;
 var nodemon = require('gulp-nodemon');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var drFrankenstyle = require('dr-frankenstyle');
 
 // Restart the server for changes
 gulp.task('default', ['assets', 'browser-sync'], function() {
@@ -24,7 +25,6 @@ gulp.task('build', ['clean', 'assets'], function(){});
 gulp.task('assets', [
   'sass',
   'react',
-  'pui',
   'images'
 ]);
 
@@ -45,6 +45,14 @@ gulp.task('sass', function(){
     .pipe(reload({stream:true}));
 });
 
+gulp.task('buildPuiCss', function(done) {
+  del('buildDrF/**/*', function() {
+    drFrankenstyle()
+      .pipe(gulp.dest('buildDrF'))
+      .on('end', done);
+  });
+});
+
 gulp.task('react', function() {
   var b = browserify('./app/assets/javascripts/react-components/application.jsx');
   b.transform(reactify);
@@ -54,11 +62,6 @@ gulp.task('react', function() {
     .pipe(rename('application.js'))
     .pipe(gulp.dest('build'))
     .pipe(reload({stream:true}));
-});
-
-gulp.task('pui', function() {
-  return gulp.src('./vendor/**/*')
-    .pipe(gulp.dest('build/'))
 });
 
 gulp.task('clean', function(done) {

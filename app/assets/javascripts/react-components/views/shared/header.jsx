@@ -1,9 +1,11 @@
 /** @jsx React.DOM */
+var React = require('react');
+var ReactRouter = require('react-router');
 
 (function () {
   'use strict';
 
-  var Link = window.ReactRouter.Link;
+  var Link = ReactRouter.Link;
 
   var Header = React.createClass({
 

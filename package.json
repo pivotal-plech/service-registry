@@ -19,7 +19,8 @@
     "lodash": "^2.4.1",
     "node": "0.0.0",
     "node-sass": "^3.1.2",
-    "react": "~0.12.2",
+    "pui-css-all": "0.0.1",
+    "react": "~0.13.3",
     "react-router": "~0.11.6",
     "reactify": "~0.17.1",
     "underscore": "~1.7.0",
@@ -27,13 +28,14 @@
   },
   "devDependencies": {
     "browser-sync": "^1.8.2",
+    "del": "~1.1.1",
+    "dr-frankenstyle": "^0.1.4",
     "gulp": "^3.8.10",
+    "gulp-imagemin": "~2.1.0",
     "gulp-nodemon": "~1.0.4",
     "gulp-rename": "~1.2.0",
-    "gulp-sass": "~1.2.4",
-    "react-tools": "~0.12.2",
-    "del": "~1.1.1",
-    "gulp-imagemin": "~2.1.0",
-    "imagemin-pngquant": "~4.0.0"
+    "gulp-sass": "^2.0.1",
+    "imagemin-pngquant": "~4.0.0",
+    "react-tools": "~0.12.2"
   }
 }
