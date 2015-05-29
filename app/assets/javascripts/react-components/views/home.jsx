@@ -1,5 +1,7 @@
 /** @jsx React.DOM */
 var React = require('react');
+var DefaultButton = require('pui-react-buttons').DefaultButton;
+var PrimaryButton = require('pui-react-buttons').PrimaryButton;
 
 (function () {
   'use strict';
@@ -13,6 +15,8 @@ var React = require('react');
             <div className="container">
               <h1 className="title txt-c em-low mvn">Prototyping with React and Node</h1>
               <p className="h2 txt-c em-low mvn">You can do all sorts of fun things with this!</p>
+              <DefaultButton>Default Button</DefaultButton>
+              <PrimaryButton>Default Button</PrimaryButton>
             </div>
           </div>
           <hr className="mvn" />

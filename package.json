@@ -20,6 +20,7 @@
     "node": "0.0.0",
     "node-sass": "^3.1.2",
     "pui-css-all": "0.0.1",
+    "pui-react-buttons": "^0.1.0",
     "react": "~0.13.3",
     "react-router": "^0.13.3",
     "reactify": "~0.17.1",
