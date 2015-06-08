@@ -15,7 +15,7 @@ var drFrankenstyle = require('dr-frankenstyle');
 
 // Restart the server for changes
 gulp.task('default', ['assets', 'browser-sync'], function() {
-  gulp.watch(['app/assets/javascripts/**/*.js', 'app/assets/javascripts/**/*.jsx'], ['react']);
+  gulp.watch(['app/assets/components/**/*.js', 'app/assets/components/**/*.jsx'], ['react']);
   gulp.watch(['app/assets/stylesheets/**/*.scss'], ['sass']);
   gulp.watch(['app/assets/images/**/*'], ['images']);
 });
@@ -54,7 +54,7 @@ gulp.task('buildPuiCss', function(done) {
 });
 
 gulp.task('react', function() {
-  var b = browserify('./app/assets/javascripts/react-components/application.jsx');
+  var b = browserify('./app/assets/components/application.jsx');
   b.transform(reactify);
 
   return b.bundle()
@@ -70,7 +70,7 @@ gulp.task('clean', function(done) {
 
 gulp.task('browser-sync', ['nodemon'], function() {
   browserSync.init(null, {
-    proxy: "http://localhost:3000",
+    proxy: "http://localhost:3000/#/",
     browser: "google chrome",
     port: 7000,
   });

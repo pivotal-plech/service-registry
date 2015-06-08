@@ -16,8 +16,8 @@ var React = require('react');
       <div className='welcome'>
           <div className='container type-neutral-11 txt-c pvxxxl'>
             <div className='row'>
-              <h1 className='mbn em-high'>Welcome to Pivotal Prototyping</h1>
-              <h2 className='mtn type-neutral-6 em-low'>Designed in Pivotal UI and React</h2>
+              <h1 className='mbn em-high'>Ship Better UI, Quicker</h1>
+              <h2 className='mtn type-neutral-6 em-low'>This is everything you need to get started building UI at Pivotal.</h2>
               <img src={'images/img--logo.png'} />
             </div>
           </div>

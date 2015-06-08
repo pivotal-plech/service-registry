@@ -10,9 +10,9 @@ var Link = Router.Link;
 var RouteHandler = Router.RouteHandler;
 
 //Partials
-var Home = require('./views/home.jsx');
-var Header = require('./views/shared/header.jsx');
-var About = require('./views/about.jsx');
+var Home = require('./home/home.jsx');
+var Header = require('./shared/header.jsx');
+var About = require('./about/about.jsx');
 var ProtoPane = require('./protoPane.jsx');
 
 var App = React.createClass({
