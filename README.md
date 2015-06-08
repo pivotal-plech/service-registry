@@ -6,6 +6,7 @@ Pivotal UI Prototyping is a simple prototyping tool built on a Javascript stack.
 ```
 git clone git@github.com:pivotal-cf/pivotal-ui-prototyping.git
 npm install
+gulp buildPuiCss
 gulp
 ```
 
@@ -17,7 +18,6 @@ gulp
 - Basic Gulp Tasks
 - Dead simple Hapi.js Server
 - React as Partials
-- Layouts in Jade
 - Browserify
 
 ###Contributing/Help
