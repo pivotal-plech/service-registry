@@ -25,6 +25,7 @@
     "react-router": "^0.13.3",
     "reactify": "~0.17.1",
     "underscore": "~1.7.0",
+    "v8flags": "^2.0.5",
     "vinyl-source-stream": "~1.0.0"
   },
   "devDependencies": {

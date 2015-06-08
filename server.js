@@ -69,6 +69,16 @@ server.route({
 
 server.route({
     method: 'GET',
+    path: '/pui-css-typography/{params*}',
+    handler: {
+        directory: {
+            path: 'buildDrF/pui-css-typography/'
+        }
+    }
+});
+
+server.route({
+    method: 'GET',
     path: '/application.css',
     handler: function (request, reply) {
         reply.file('build/application.css');
