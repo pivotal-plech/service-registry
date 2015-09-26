@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "browserify": "~8.0.1",
-    "good": "~5.1.0",
+    "good": "^6.4.0",
+    "good-console": "^5.1.0",
     "gulp": "^3.9.0",
     "hapi": "~8.0.0",
     "jade": "^1.8.2",
