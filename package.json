@@ -1,8 +1,9 @@
 {
   "name": "pui-prototyping",
   "version": "0.0.0",
-  "description": "Quick spike on prototyping with hapi.js",
+  "description": "Prototyping in Pivotal UI React",
   "main": "server.js",
+  "repository": "git@github.com:pivotal-cf/pivotal-ui-prototyping.git",
   "engines": {
     "node": "v0.10.24",
     "npm": "1.3.21"
@@ -12,19 +13,14 @@
   "dependencies": {
     "browserify": "~8.0.1",
     "good": "~5.1.0",
-    "good-console": "~4.0.0",
-    "gulp": "~3.8.10",
+    "gulp": "^3.9.0",
     "hapi": "~8.0.0",
     "jade": "^1.8.2",
-    "lodash": "^2.4.1",
     "node": "0.0.0",
     "node-sass": "^3.1.2",
-    "pui-css-all": "0.0.1",
-    "pui-react-buttons": "^0.1.0",
     "react": "~0.13.3",
     "react-router": "^0.13.3",
     "reactify": "~0.17.1",
-    "underscore": "~1.7.0",
     "v8flags": "^2.0.5",
     "vinyl-source-stream": "~1.0.0"
   },
@@ -32,12 +28,12 @@
     "browser-sync": "^1.8.2",
     "del": "~1.1.1",
     "dr-frankenstyle": "^0.1.4",
-    "gulp": "^3.8.10",
     "gulp-imagemin": "~2.1.0",
     "gulp-nodemon": "~1.0.4",
     "gulp-rename": "~1.2.0",
     "gulp-sass": "^2.0.1",
     "imagemin-pngquant": "~4.0.0",
+    "lodash": "^3.10.1",
     "q": "^1.4.1",
     "react-tools": "~0.12.2"
   }
