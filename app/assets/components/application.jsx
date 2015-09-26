@@ -13,7 +13,6 @@ var RouteHandler = Router.RouteHandler;
 var Home = require('./home/home.jsx');
 var Header = require('./shared/header.jsx');
 var About = require('./about/about.jsx');
-var ProtoPane = require('./protoPane.jsx');
 
 var App = React.createClass({
   render: function () {
