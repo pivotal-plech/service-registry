@@ -11,22 +11,17 @@ var ReactRouter = require('react-router');
 
     render: function() {
       return (
-      <div className='global-nav bg-dark-1 pal'>
-        <div className="container">
-          <div className="media">
-            <div className="media-body">
-              <Link to="/">
-                <h1 className="type-neutral-11 mvn h4">
-                  <span className="em-alt">Name of your App</span>
-                <span className="h6 type-neutral-6 mll em-default">v0.1</span>
-                </h1>
-              </Link>
-            </div>
-            <div className="media-right type-neutral-11">
-              <Link className="mrxl type-neutral-11" to="/">Home</Link>
-              <Link className="type-neutral-11" to="/about">About</Link>
-            </div>
-          </div>
+      <div className='global-header'>
+        <div className='container'>
+          <a className="logo type-dark-11" href="/">
+            <svg className="logo-mark" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50">
+              <rect fill="#00786E" width="50" height="50"/>
+              <path fill="#FFFFFF" d="M23.5,13.5H17V37h4V17h2c0.5,0,0.9,0,1.3,0c3.3,0.1,4.9,1.1,4.9,3.6c0,0.1,0,0.2,0,0.3
+                c0,2.4-1.3,3.9-4.8,3.9c-0.3,0-0.9-0.1-0.9-0.1V28c0,0,0.5,0,0.9,0c5.1,0,8.7-2,8.7-7.1c0-0.1,0-0.2,0-0.3
+                C33.1,15.4,29.2,13.5,23.5,13.5z"/>
+            </svg>
+            <span className="logo-type">Service Registry</span>
+          </a>
         </div>
       </div>
       );

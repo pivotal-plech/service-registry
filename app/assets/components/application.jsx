@@ -13,6 +13,7 @@ var RouteHandler = Router.RouteHandler;
 var Home = require('./home/home.jsx');
 var Header = require('./shared/header.jsx');
 var About = require('./about/about.jsx');
+var Service = require('./service/service.jsx');
 
 var App = React.createClass({
   render: function () {
@@ -29,6 +30,7 @@ var routes = (
   <Route name="app" path="/" handler={App}>
     <DefaultRoute handler={Home}/>
     <Route name="/about" handler={About}/>
+    <Route name="/service" handler={Service}/>
   </Route>
 );
 

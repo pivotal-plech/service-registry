@@ -1,10 +1,13 @@
 /** @jsx React.DOM */
 var React = require('react');
 
-// npm install --save pui-react-buttons
-// uncomment line 6 + 7
-// var DefaultButton = require('pui-react-buttons').DefaultButton;
-// var PrimaryButton = require('pui-react-buttons').PrimaryButton;
+// All the PUI
+var Row = require('pui-react-grids').Row;
+var Col = require('pui-react-grids').Col;
+
+var Search = require('./search.jsx');
+var Services = require('./services.jsx');
+var PageTitle = require('./pageTitle.jsx');
 
 (function () {
   'use strict';
@@ -14,7 +17,8 @@ var React = require('react');
     render: function() {
       return (
         <div>
-          <h1>Hello</h1>
+          <PageTitle />
+          <Services />
         </div>
       );
     }
